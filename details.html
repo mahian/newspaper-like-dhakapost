@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>details news</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- top navbar -->
+    <div class="container d-none d-lg-flex py-3 navbar-root">
+        <div class="d-flex justify-content-between align-items-center w-100">
+
+            <p class="d-flex align-items-center">
+                <span class="d-flex align-items-center me-3">
+                    <svg class="me-2" fill="black" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24"
+                        width="18">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                        </path>
+                    </svg><span>ঢাকা</span>
+                </span>
+                <span class="d-flex align-items-center">
+                    <svg class="me-2" fill="black" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24"
+                        width="18">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z">
+                        </path>
+                    </svg><span> বুধবার, ০৫ এপ্রিল ২০২৩</span>
+                </span>
+            </p>
+            <a class="brand-logo-top" title="Dhaka Post" href="/">
+                <img style="max-width: 300px;" src="/assets/images/dhaka-post-logo.png" alt="Dhaka Post">
+            </a>
+            <div class="d-flex align-items-center social-media-icons">
+                <a href="https://www.facebook.com/DPostOnline/" aria-label="Facebook" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon facebook"><i class="fa-brands fa-facebook"></i></i></div>
+                </a>
+                <a href="https://www.youtube.com/c/DhakaPostOfficial" aria-label="Youtube" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon youtube"><i class="fa-brands fa-youtube"></i></div>
+                </a>
+                <a href="https://twitter.com/dpostonline" aria-label="Twitter" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon twitter"><i class="fa-brands fa-twitter"></i></div>
+                </a>
+                <a href="https://www.instagram.com/dpostonline" aria-label="Instagram" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon instagram"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/company/dpostonline/" aria-label="Linkedin" target="_blank"
+                    class="pl-2" rel="nofollow noopener">
+                    <div class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.dhakapost" aria-label="google play"
+                    target="_blank" class="pl-2" rel="nofollow noopener">
+                    <div class="social-icon googleplay">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play"
+                            class="svg-inline--fa fa-google-play fa-w-16" role="img" height="14"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="white"
+                                d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://pod.link/1562553969" aria-label="Dhaka Post Podcast" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon"><i class="fa-solid fa-podcast"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- second navbar -->
+    <nav class="navbar bg-white navbar-expand-lg sticky-top shadow-sm navigator-extra"
+        style="z-index: 2147483!important;">
+        <div class="container">
+            <button class="navbar-toggler collapsed m-margin-reducer-left-14" type="button" data-toggle="collapse"
+                data-target="#main-nav-1" aria-controls="main-nav-1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+                <span class="sr-only">DP</span>
+            </button>
+            <div class="navbar-brand align-items-center d-flex d-lg-none me-0">
+                <a title="Dhaka Post" href="/">
+                    <img src="/assets/images/dhaka-post-logo.png" alt="Dhaka Post" width="1345" height="192">
+                </a>
+            </div>
+            <button type="button" class="btn btn-link d-flex d-lg-none" data-target="slide-down-m" aria-label="Search"
+                style="margin-right: -14px;">
+                <i class="fa fa-search" style="font-size: 20px;"></i></button>
+            <div class="navbar-collapse collapse" id="main-nav-1">
+                <div style="width: 99%">
+                    <ul class="navbar-nav m-auto d-none d-lg-flex d-menu-items justify-content-center">
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com" class="nav-link">প্রচ্ছদ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com/latest-news" class="nav-link">সর্বশেষ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com/national" class="nav-link">জাতীয়</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com/politics" class="nav-link">রাজনীতি</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com/economy" class="nav-link">অর্থনীতি</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-toggle"
+                            style="display: flex; color: #FFF; align-items: center;">
+                            <a title="" href="https://www.dhakapost.com/country" class="nav-link">সারাদেশ</a>
+                            <div class="dropdown-menu single-dropdown s-dr-menu m-0" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://www.dhakapost.com/country-map"
+                                    style="padding: 5px 0;">জেলার
+                                    খবর</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com/international" class="nav-link">আন্তর্জাতিক</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com/sports" class="nav-link">খেলা</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="https://www.dhakapost.com/entertainment" class="nav-link">বিনোদন</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="" href="https://www.dhakapost.com/health" class="nav-link">স্বাস্থ্য</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-toggle"
+                            style="display: flex; color: #FFF; align-items: center;">
+                            <a title="" href="#" class="nav-link">ফিচার</a>
+                            <div class="dropdown-menu single-dropdown s-dr-menu m-0" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://www.dhakapost.com/lifestyle"
+                                    style="padding: 5px 0;">লাইফস্টাইল</a>
+                                <a class="dropdown-item" href="https://www.dhakapost.com/technology"
+                                    style="padding: 5px 0;">তথ্যপ্রযুক্তি</a>
+                                <a class="dropdown-item" href="https://www.dhakapost.com/tourism"
+                                    style="padding: 5px 0;">ট্যুরিজম</a>
+                                <a class="dropdown-item" href="https://www.dhakapost.com/study"
+                                    style="padding: 5px 0;">পড়াশোনা</a>
+                            </div>
+                        </li>
+                        <li class="nav-item hidden-item-lowerend">
+                            <a title="" href="https://www.dhakapost.com/education" class="nav-link">শিক্ষা</a>
+                        </li>
+                        <li class="nav-item hidden-item-lowerend">
+                            <a title="" href="https://www.dhakapost.com/jobs-career" class="nav-link">জবস</a>
+                        </li>
+                        <li class="nav-item position-static d-flex">
+                            <button class="navbar-toggler collapsed nav-link d-flex align-items-center"
+                                aria-expanded="false" type="button" data-toggle="collapse" data-target="#nav-items-2">
+                                <div class="button-bars">
+                                    <span class="icon-bar top-bar"></span>
+                                    <span class="icon-bar middle-bar"></span>
+                                    <span class="icon-bar bottom-bar"></span>
+                                </div>
+                                <span class="button-label">অন্যান্য</span>
+                            </button>
+                            <div class="dropdown-menu w-100 top-auto shadow border-0 rounded-0 nav-collapse collapse m-0"
+                                id="nav-items-2">
+                                <div class="container">
+                                    <div class="row w-100 menu-items-others">
+                                        <div class="col-sm-2 d-none">
+                                            <a href="https://www.dhakapost.com/health">স্বাস্থ্য</a>
+                                        </div>
+                                        <div class="col-sm-2 show-higherend">
+                                            <a href="https://www.dhakapost.com/education">শিক্ষা</a>
+                                        </div>
+                                        <div class="col-sm-2 show-higherend">
+                                            <a href="https://www.dhakapost.com/jobs-career">জবস</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/probash">প্রবাস</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/opinion">মতামত</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/religion">ধর্ম</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/children-post">ছোটদের পোস্ট</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/campus">ক্যাম্পাস</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/law-courts">আইন-আদালত</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/podcasts">পডকাস্ট</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/agriculture-and-nature">কৃষি ও
+                                                প্রকৃতি</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/aviation">এভিয়েশন</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/exclusive">এক্সক্লুসিভ</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/mass-media">গণমাধ্যম</a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="https://www.dhakapost.com/unicode-to-bijoy-converter">কনভার্টার</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item position-static d-flex">
+                            <button type="button" class="btn btn-link" data-target="slide-down" aria-label="Search"><i
+                                    class="fa fa-search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex d-lg-none"
+                    style="position: fixed; padding: 1rem; background: #f5f5f5; width: 100%; color: #FFF; justify-content:space-between">
+                    <button class="navbar-toggler m-margin-reducer-left-14 text-white" type="button"
+                        data-toggle="collapse" data-target="#main-nav-1" aria-controls="main-nav-1" aria-expanded="true"
+                        aria-label="Toggle navigation" style=" ">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                        <span class="sr-only">DP</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <form class="search-wrapper needs-validation" style="display: none;" data-target="slide-content"
+            action="https://www.dhakapost.com/search" method="get">
+            <div class="container m-pl-0 m-pr-0">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" autocomplete="off" placeholder="অনুসন্ধান করুন"
+                            required="">
+                        <div class="input-group-append search-action">
+                            <button type="submit" class="btn btn-dark"><i style="color: white !important;"
+                                    class="fa fa-search"></i></button>
+                            <button type="button" class="btn btn-light m-margin-reducer-right-14"
+                                data-target="slide-up">
+                                <i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </nav>
+
+    <!-- main container -->
+    <main role="main">
+
+        <div id="div-gpt-ad-1670239862432-0" style="">
+            <div id="google_ads_iframe_/22392448694/dp-common-1x1_0__container__"
+                style="border: 0pt none; margin: auto; text-align: center;"></div>
+        </div>
+        <div class="pt-2 pb-2 details">
+            <div class="container">
+                <div class="news-items">
+                    <div class="row news-item-0">
+                        <div class="col-xl-9 col-lg-8 news-root-container-0">
+                            <nav aria-label="breadcrumb mt-5">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">প্রচ্ছদ</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">জাতীয়</li>
+                                </ol>
+                            </nav>
+                            <article class="details-body" lg-uid="lg0">
+                                <h1 class="news-title">
+                                    ফ্লাইওভারের পিলারে দৃষ্টিনন্দন গ্রাফিতি করছে ডিএনসিসি
+                                </h1>
+                                <div class="details-writer d-flex align-items-center justify-content-between my-2 py-2"
+                                    style="gap: 10px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-4" style="width: 38px;height: 38px;border-radius: 19px; overflow: hidden;">
+                                            <img class="author-image" style="width: 100%;"
+                                                src="https://media.licdn.com/dms/image/C4D03AQG85mHpcNqOBw/profile-displayphoto-shrink_800_800/0/1655575541400?e=2147483647&v=beta&t=1PoD4RU0CXwvbsWWQ_8Z7jEr8C62ZPrcP2e00tkGSTA"
+                                                alt="Dhaka Post Desk">
+                                        </div>
+                                        <div class="d-flex justify-content-start flex-column ml-2">
+                                            <div class="d-flex align-items-center author-reporting-area">
+                                                <div class="d-flex align-items-center">
+                                                    <p class="author">
+                                                        মাহিয়ান আহমাদ</p>
+                                                </div>
+                                            </div>
+                                            <p class="news-time" style="color: rgba(0,0,0,.7);">১০ এপ্রিল ২০২৩, ০৩:০৪
+                                                পিএম
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-0 share-top mt-2 d-flex align-items-center d-print-none justify-content-between">
+                                    <div class="sharethis-inline-share-buttons st-left  st-inline-share-buttons st-animated"
+                                        style="z-index: 1;" id="st-1">
+                                        <div class="st-total ">
+                                            <span class="st-label">3</span>
+                                            <span class="st-shares">
+                                                Shares
+                                            </span>
+                                        </div>
+                                        <div class="st-btn st-first st-remove-label" data-network="facebook"
+                                            style="display: inline-block;">
+                                            <img alt="facebook sharing button"
+                                                src="https://platform-cdn.sharethis.com/img/facebook.svg">
+
+                                        </div>
+                                        <div class="st-btn st-remove-label" data-network="messenger"
+                                            style="display: inline-block;">
+                                            <img alt="messenger sharing button"
+                                                src="https://platform-cdn.sharethis.com/img/messenger.svg">
+
+                                        </div>
+                                        <div class="st-btn st-remove-label" data-network="whatsapp"
+                                            style="display: inline-block;">
+                                            <img alt="whatsapp sharing button"
+                                                src="https://platform-cdn.sharethis.com/img/whatsapp.svg">
+
+                                        </div>
+                                        <div class="st-btn st-remove-label" data-network="copy"
+                                            style="display: inline-block;">
+                                            <img alt="copy sharing button"
+                                                src="https://platform-cdn.sharethis.com/img/copy.svg">
+
+                                        </div>
+                                        <div class="st-btn st-last st-remove-label" data-network="print"
+                                            style="display: none;">
+                                            <img alt="print sharing button"
+                                                src="https://platform-cdn.sharethis.com/img/print.svg">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-0 d-flex align-items-center fs-mapper fs-mapper-0"
+                                        style="pointer-events: auto;">
+                                        <button type="button"
+                                            class="btn btn-light social-icon share-social-icon fsi fsi-0">
+                                            ফ+
+                                        </button>
+                                        <button type="button"
+                                            class="btn btn-light social-icon share-social-icon fsd fsd-0">
+                                            ফ-
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr class="pb-2 fix-padding-0">
+                                <div class="news-image">
+                                    <img src="https://cdn.dhakapost.com/media/imgAll/BG/2023April/f-20230410150422.jpg"
+                                        alt="ফ্লাইওভারের পিলারে দৃষ্টিনন্দন গ্রাফিতি করছে ডিএনসিসি" class="lg-image">
+                                    <p class="news-image-caption"></p>
+                                </div>
+                                <div class="news-details">
+                                    <p><strong>ফ্লাইওভারের পিলারে দৃষ্টিনন্দন গ্রাফিতি বা দেয়ালচিত্র আঁকার কার্যক্রম
+                                            শুরু
+                                            করেছে ঢাকা উত্তর সিটি করপোরেশন (ডিএনসিসি)।&nbsp;</strong></p>
+                                    <p>সোমবার (১০ এপ্রিল) মগবাজার চৌরাস্তা ফ্লাইওভারের পিলারে দৃষ্টিনন্দন গ্রাফিতি আর্ট
+                                        কার্যক্রমের উদ্বোধন করেন ডিএনসিসি মেয়র আতিকুল ইসলাম।</p>
+                                    <p>আয়োজকরা জানান, রাজধানীর মগবাজার থেকে সাতরাস্তামুখী ফ্লাইওভারের নিচের পিলারগুলোতে
+                                        ব্যানার-পোস্টার তুলে পরিষ্কার-পরিচ্ছন্ন করে সাদা রঙ করা হয়েছে। ধবধবে সাদা রঙের
+                                        ক্যানভাসে ফুটে উঠছে দৃষ্টিনন্দন গ্রাফিতি। তাতে শোভা পাচ্ছে দেশীয় সংস্কৃতি ও
+                                        বিভিন্ন
+                                        শিক্ষণীয় বিষয়।</p>
+                                    <p><img class="lg-image"
+                                            src="https://cdn.dhakapost.com/media/imgAll/BG/2023April/dfhg-20230410150330.jpg"
+                                            alt="dhakapost" width="1200" height="675"></p>
+                                    <p>ইতোমধ্যে দৃষ্টিনন্দনের কাজ করা চারটি পিলারের একটিতে পরিবেশ সংরক্ষণের চিত্র ফুটিয়ে
+                                        তোলা হয়েছে। গ্রাফিতিতে রয়েছে- পিলারের একপাশে এক কিশোর চারা গাছ লাগাচ্ছে, আরেক
+                                        কিশোর
+                                        বই নিয়ে স্কুলে যাচ্ছে। একটিতে লেখা রয়েছে হর্ন বাজাবেন না ও পোস্টার না লাগাই। আর
+                                        দুটি
+                                        পিলের একটিতে ফুল, পাখি, সূর্য ও আরেকটিতে ফুলের নকশার সঙ্গে নৌকা দিয়ে আবহমান
+                                        বাংলার
+                                        সংস্কৃতি ফুটিয়ে তোলা হয়েছে।</p>
+                                    <p>মাত্র কাজ শুরু হলেও পিলারগুলো যে সৌন্দর্য ছড়াচ্ছে তাতে আকৃষ্ট হচ্ছেন পথচারীরা।
+                                        অনেকেই
+                                        মোবাইলের ক্যামেরায় বন্দী করছেন গ্রাফিতির সেই দৃশ্য।</p>
+                                    <p><img class="lg-image"
+                                            src="https://cdn.dhakapost.com/media/imgAll/BG/2023April/h-20230410150416.jpg"
+                                            alt="dhakapost" width="1200" height="675"></p>
+                                    <p>এসময় ডিএনসিসি মেয়র আতিকুল ইসলাম বলেন, আমরা সিটি করপোরেশন থেকে পোস্টার-ব্যানারে
+                                        ভরা
+                                        অসুন্দর পিলারগুলোকে দৃষ্টিনন্দন করার উদ্যোগ নিয়েছি। আমরা চিত্রকর্মের মাধ্যমে
+                                        পিলারগুলো সুন্দর করে সাজিয়ে দিচ্ছি। আমরা ভবিষ্যৎ প্রজন্মের জন্য সুন্দর একটি শহর
+                                        গড়ে
+                                        তুলতে চাই। পিলারগুলোতে চিত্রকর্মের মাধ্যমে শিক্ষণীয় ম্যাসেজ দেওয়া হবে।</p>
+                                    <p>অনুষ্ঠানে ডিএনসিসির প্রধান নির্বাহী কর্মকর্তা মো. সেলিম রেজা, প্রধান প্রকৌশলী
+                                        ব্রিগেডিয়ার জেনারেল মুহ. আমিরুল ইসলাম, প্রধান বর্জ্য ব্যবস্থাপনা কর্মকর্তা কমোডর
+                                        এস
+                                        এম শরিফ-উল ইসলাম, প্রধান রাজস্ব কর্মকর্তা আ ন ম তরিকুল ইসলাম, ডিএনসিসির প্রধান
+                                        নগর
+                                        পরিকল্পনাবিদ মাকসুদ হাসেম উপস্থিত ছিলেন।</p>
+                                    <p><span style="color: #ced4d9;"><em>এএসএস/কেএ</em></span></p>
+                                </div>
+                                <div class="tags d-flex align-items-center flex-wrap d-print-none">
+                                    <div class="view-more-round" style="margin: 5px;"><a style="color: #000;"
+                                            href="https://www.dhakapost.com/topic/ঢাকা-উত্তর-সিটি-কর্পোরেশন">ঢাকা উত্তর
+                                            সিটি
+                                            কর্পোরেশন</a>
+                                    </div>
+                                    <div class="view-more-round" style="margin: 5px;"><a style="color: #000;"
+                                            href="https://www.dhakapost.com/topic/ডিএনসিসি">ডিএনসিসি</a>
+                                    </div>
+                                    <div class="view-more-round" style="margin: 5px;"><a style="color: #000;"
+                                            href="https://www.dhakapost.com/topic/রাজধানীর-খবর">রাজধানীর খবর</a>
+                                    </div>
+                                    <div class="view-more-round" style="margin: 5px;"><a style="color: #000;"
+                                            href="https://www.dhakapost.com/topic/ঢাকার-খবর">ঢাকার খবর</a>
+                                    </div>
+                                    <div class="view-more-round" style="margin: 5px;"><a style="color: #000;"
+                                            href="https://www.dhakapost.com/topic/ঢাকা-সিটি">ঢাকা সিটি</a>
+                                    </div>
+                                </div>
+                                <div class="content-below-ad content-below-ad-0 d-print-none">
+                                </div>
+                                <div class="py-2 d-print-none">
+                                    <div id="fb-root"></div>
+                                    <script async="" defer="" crossorigin="anonymous"
+                                        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v10.0&amp;appId=3102640556528237&amp;autoLogAppEvents=1"
+                                        nonce="" type="text/javascript"></script>
+                                    <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop"
+                                        data-href="https://www.dhakapost.com/national/185914" data-width="100%"
+                                        data-numposts="5" fb-xfbml-state="rendered"
+                                        fb-iframe-plugin-query="app_id=3102640556528237&amp;container_width=940&amp;height=100&amp;href=https%3A%2F%2Fwww.dhakapost.com%2Fnational%2F185914&amp;locale=en_US&amp;numposts=5&amp;sdk=joey&amp;version=v8.0&amp;width="
+                                        style="width: 100%;"><span
+                                            style="vertical-align: bottom; width: 100%; height: 204px;"><iframe
+                                                name="f162e6e22ed3aa" width="1000px" height="100px"
+                                                data-testid="fb:comments Facebook Social Plugin"
+                                                title="fb:comments Facebook Social Plugin" frameborder="0"
+                                                allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                                allow="encrypted-media"
+                                                src="https://www.facebook.com/v8.0/plugins/comments.php?app_id=3102640556528237&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df15f4957ee4cec8%26domain%3Dwww.dhakapost.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.dhakapost.com%252Ff12ac65a53be858%26relation%3Dparent.parent&amp;container_width=940&amp;height=100&amp;href=https%3A%2F%2Fwww.dhakapost.com%2Fnational%2F185914&amp;locale=en_US&amp;numposts=5&amp;sdk=joey&amp;version=v8.0&amp;width="
+                                                style="border: none; visibility: visible; width: 100%; height: 204px;"
+                                                class=""></iframe></span></div>
+                                </div>
+                            </article>
+                            <div class="d-flex justify-content-center d-print-none">
+                                <div id="div-gpt-ad-1643184983419-0" style="min-width: 300px; min-height: 90px;">
+                                    <script type="text/javascript">
+                                        googletag.cmd.push(function () {
+                                            googletag.display('div-gpt-ad-1643184983419-0');
+                                        });
+                                    </script>
+                                    <div id="google_ads_iframe_/22392448694/dp-details-below-b-728x90//336x280//300x250_0__container__"
+                                        style="border: 0pt none; margin: auto; text-align: center; width: 728px; height: 0px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-print-none">
+                                <div class="py-3 m-py-2">
+                                    <div class="category-header d-flex justify-content-between align-items-center mt-2">
+                                        <div class="heading recent-heading">
+                                            <p class="title">আরও পড়ুন</p>
+                                        </div>
+                                    </div>
+                                    <div class="more-items pt-2">
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="col-sm-4 box-news">
+                                                <a href="https://www.dhakapost.com/national/185939"
+                                                    class="news-item news-item-box">
+                                                    <img src="https://cdn.dhakapost.com/media/common/placeholder.jpg"
+                                                        data-src="https://assets.dhakapost.com/media/imgAll/BG/2023April/hpm-bg-20230410161122.jpg?width=330&amp;height=186"
+                                                        alt="প্রথম আলো দেশকে স্থিতিশীল থাকতে দিতে চায় না : প্রধানমন্ত্রী"
+                                                        class="img-loader">
+                                                    <h2 class="title">প্রথম আলো দেশকে স্থিতিশীল থাকতে দিতে চায় না :
+                                                        প্রধানমন্ত্রী</h2>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-4 box-news">
+                                                <a href="https://www.dhakapost.com/national/185938"
+                                                    class="news-item news-item-box">
+                                                    <img src="https://cdn.dhakapost.com/media/common/placeholder.jpg"
+                                                        data-src="https://assets.dhakapost.com/media/imgAll/BG/2023April/dhaka-post-dmp-202211301759591-20230410160940.jpg?width=330&amp;height=186"
+                                                        alt="ডিএমপির এডিসি ও এসি পদমর্যাদার ২ কর্মকর্তার বদলি"
+                                                        class="img-loader">
+                                                    <h2 class="title">ডিএমপির এডিসি ও এসি পদমর্যাদার ২ কর্মকর্তার বদলি
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-4 box-news">
+                                                <a href="https://www.dhakapost.com/national/185937"
+                                                    class="news-item news-item-box">
+                                                    <img src="https://cdn.dhakapost.com/media/common/placeholder.jpg"
+                                                        data-src="https://assets.dhakapost.com/media/imgAll/BG/2023April/arres-20230122120000-20230410160940.jpg?width=330&amp;height=186"
+                                                        alt="ভাটারায় ট্রাফিক পুলিশের ওপর হামলা, গ্রেপ্তার ৪"
+                                                        class="img-loader">
+                                                    <h2 class="title">ভাটারায় ট্রাফিক পুলিশের ওপর হামলা, গ্রেপ্তার ৪
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-print-none">
+                            <div class="probash">
+                                <div class="fy-selective third-right">
+                                    <div class="same-category-items pt-2">
+                                        <div
+                                            class="category-header politics-ch d-flex justify-content-between align-items-center politics__home mt-2">
+                                            <div class="heading politics-heading">
+                                                <p class="title">
+                                                    <a href="https://www.dhakapost.com/national"
+                                                        class="politics-lc">জাতীয়
+                                                        থেকে আরও</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="regular-list scaled m-px-0">
+                                            <a href="https://www.dhakapost.com/national/185936"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/police-prodhan-20230410160814.jpg?width=160&amp;height=90"
+                                                        alt="নিউমার্কেট পরিদর্শন করলেন পুলিশপ্রধান" class="img-loader">
+                                                </div>
+                                                <h2 class="title">নিউমার্কেট পরিদর্শন করলেন পুলিশপ্রধান</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/national/185930"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/rohingya-20230410155507.jpg?width=160&amp;height=90"
+                                                        alt="রোহিঙ্গাদের খাদ্য সহায়তায় ২৩ মিলিয়ন ডলার দে‌বে যুক্তরাষ্ট্র"
+                                                        class="img-loader">
+                                                </div>
+                                                <h2 class="title">রোহিঙ্গাদের খাদ্য সহায়তায় ২৩ মিলিয়ন ডলার দে‌বে
+                                                    যুক্তরাষ্ট্র</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/national/185919"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/140-202304061333351-202304081049241-202304101155581-20230410152003.jpg?width=160&amp;height=90"
+                                                        alt="সংসদের ৫০ বছর পূর্তির বিশেষ অধিবেশন সমাপ্ত"
+                                                        class="img-loader">
+                                                </div>
+                                                <h2 class="title">সংসদের ৫০ বছর পূর্তির বিশেষ অধিবেশন সমাপ্ত</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/national/185913"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/hpm-bg-20230410151626.jpg?width=160&amp;height=90"
+                                                        alt="সংসদের ৫০ বছর পূর্তি উপলক্ষ্যে প্রধানমন্ত্রীর আনীত প্রস্তাব গৃহীত"
+                                                        class="img-loader">
+                                                </div>
+                                                <h2 class="title">সংসদের ৫০ বছর পূর্তি উপলক্ষ্যে প্রধানমন্ত্রীর আনীত
+                                                    প্রস্তাব গৃহীত</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/national/185908"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/hasina-bg-20230410153839.jpg?width=160&amp;height=90"
+                                                        alt="ঈদের ছুটি বাড়ছে একদিন" class="img-loader">
+                                                </div>
+                                                <h2 class="title">ঈদের ছুটি বাড়ছে একদিন</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-ad-0 advertisement d-flex justify-content-center"
+                                    style="height: 250px">
+                                    <div id="div-gpt-ad-1620297488528-0" style="width: 300px; height: 250px;">
+                                        <script type="text/javascript">
+                                            googletag.cmd.push(function () {
+                                                googletag.display('div-gpt-ad-1620297488528-0');
+                                            });
+                                        </script>
+                                        <div id="google_ads_iframe_/22392448694/dp-details-right-b_0__container__"
+                                            style="border: 0pt none; margin: auto; text-align: center; width: 300px; height: 0px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fy-selective third-right">
+                                    <div class="same-category-items pt-2">
+                                        <div
+                                            class="category-header politics-ch d-flex justify-content-between align-items-center politics__home mt-2">
+                                            <div class="heading politics-heading">
+                                                <p class="title">সর্বশেষ</p>
+                                            </div>
+                                        </div>
+                                        <div class="regular-list scaled m-px-0">
+                                            <a href="https://www.dhakapost.com/national/185939"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/hpm-bg-20230410161122.jpg?width=330&amp;height=175"
+                                                        alt="প্রথম আলো দেশকে স্থিতিশীল থাকতে দিতে চায় না : প্রধানমন্ত্রী"
+                                                        class="img-loader">
+                                                </div>
+                                                <h2 class="title">প্রথম আলো দেশকে স্থিতিশীল থাকতে দিতে চায় না :
+                                                    প্রধানমন্ত্রী</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/national/185938"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/dhaka-post-dmp-202211301759591-20230410160940.jpg?width=330&amp;height=175"
+                                                        alt="ডিএমপির এডিসি ও এসি পদমর্যাদার ২ কর্মকর্তার বদলি"
+                                                        class="img-loader">
+                                                </div>
+                                                <h2 class="title">ডিএমপির এডিসি ও এসি পদমর্যাদার ২ কর্মকর্তার বদলি</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/national/185937"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/arres-20230122120000-20230410160940.jpg?width=330&amp;height=175"
+                                                        alt="ভাটারায় ট্রাফিক পুলিশের ওপর হামলা, গ্রেপ্তার ৪"
+                                                        class="img-loader">
+                                                </div>
+                                                <h2 class="title">ভাটারায় ট্রাফিক পুলিশের ওপর হামলা, গ্রেপ্তার ৪</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/national/185936"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/police-prodhan-20230410160814.jpg?width=330&amp;height=175"
+                                                        alt="নিউমার্কেট পরিদর্শন করলেন পুলিশপ্রধান" class="img-loader">
+                                                </div>
+                                                <h2 class="title">নিউমার্কেট পরিদর্শন করলেন পুলিশপ্রধান</h2>
+                                            </a>
+                                            <a href="https://www.dhakapost.com/economy/185935"
+                                                class="news-item news-item-regular py-2">
+                                                <div class="image-container">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/411-20230410160425.jpg?width=330&amp;height=175"
+                                                        alt="চীনে ভোগ্যপণ্য এক্সপোতে ৪ হাজারের বেশি পণ্য, আছে ৬৫ দেশ"
+                                                        class="img-loader">
+                                                </div>
+                                                <h2 class="title">চীনে ভোগ্যপণ্য এক্সপোতে ৪ হাজারের বেশি পণ্য, আছে ৬৫
+                                                    দেশ
+                                                </h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-ad-0 advertisement d-flex justify-content-center"
+                                    style="height: 250px">
+                                    <div id="div-gpt-ad-1680945009558-0" style="width: 300px; height: 250px;">
+                                        <script type="text/javascript">
+                                            googletag.cmd.push(function () {
+                                                googletag.display('div-gpt-ad-1680945009558-0');
+                                            });
+                                        </script>
+                                        <div id="google_ads_iframe_/22392448694/dp-details-left-a_0__container__"
+                                            style="border: 0pt none; margin: auto; text-align: center; width: 300px; height: 0px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-loader" style="display: none">
+                    <div class="d-flex justify-content-center">
+                        <div class="sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="snackbar">Link copied</div>
+            </div>
+        </div>
+    </main>
+
+    <footer data-nosnippet="" class="d-print-none" style="background: #072b3c; padding-bottom: 90px;">
+        <div class="footer-top py-3 bg-section-two" style="border-top: 3px solid">
+            <div class="container">
+                <div class="footer-top-items footer-mv d-flex align-items-center justify-content-between">
+                    <div class="footer-logo d-none d-lg-flex">
+                        <a href="/">
+                            <img style="max-width: 200px;" src="/assets/images/dhaka-post-logo.png" alt="Dhaka Post">
+                        </a>
+                    </div>
+                    <div class="editor">
+                        <p>সম্পাদক: মহিউদ্দিন সরকার</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom pt-3" style="background: #072b3c">
+            <div class="container text-white">
+                <div class="footerNewLinks text-center">
+                    <a href="https://www.dhakapost.com/privacy" class="text-white">গোপনীয়তার নীতি</a>
+                    <a href="https://www.dhakapost.com/terms-of-use" class="text-white">ব্যবহারের শর্তাবলি</a>
+                    <a href="https://www.dhakapost.com/about-us" class="text-white">আমাদের সম্পর্কে</a>
+                    <a href="https://www.dhakapost.com/team" class="text-white">আমরা</a>
+                    <a href="https://www.dhakapost.com/contact" class="text-white">যোগাযোগ</a>
+                    <a href="https://www.dhakapost.com/archive" class="text-white">আর্কাইভ</a>
+                    <a href="https://www.dhakapost.com/advertise" class="text-white">বিজ্ঞাপন</a>
+                </div>
+                <div class="footerNewAddress text-center py-3">
+                    <p class="text-white">৯৫ সোহরাওয়ার্দী এভিনিউ, বারিধারা ডিপ্লোমেটিক জোন, ঢাকা ১২১২</p>
+                    <p>
+                        <a href="tel:+8809613678678" aria-label="Telephone" class="text-white" target="_blank"
+                            rel="nofollow noopener">
+                            <abbr title="Phone"><i class="fa fa-phone"></i> </abbr>&nbsp;+৮৮০ ৯৬১৩ ৬৭৮৬৭৮<br>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:+8801313767742" aria-label="Mobile" class="text-white" target="_blank"
+                            rel="nofollow noopener">
+                            <abbr title="Mobile"><i class="fa fa-mobile"></i> </abbr>&nbsp;+৮৮০ ১৩১৩ ৭৬৭৭৪২<br>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="https://api.whatsapp.com/send/?phone=8801777707600&amp;text&amp;type=phone_number&amp;app_absent=0"
+                            aria-label="Whatsapp" class="text-white" target="_blank" rel="nofollow noopener">
+                            <abbr title="WhatsApp"><i class="fa fa-whatsapp"></i> </abbr>&nbsp;+৮৮০ ১৭৭৭ ৭০৭৬০০<br>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@dhakapost.com" aria-label="Email" class="text-white" target="_blank"
+                            rel="nofollow noopener">
+                            <abbr title="Mail"><i class="fa fa-envelope-o"></i> </abbr>&nbsp;info@dhakapost.com<br>
+                        </a>
+                    </p>
+                </div>
+                <div class="footerText text-white">
+                    <h1>Dhaka Post (ঢাকা পোস্ট) is one of the most popular and reliable Bangla News publishers. </h1>
+                    <p>It is the fastest-growing Bangla news media that provides accurate and objective news within the
+                        shortest possible time. Dhaka Post intends to cover its reach throughout every district of the
+                        country, also global news of every segment such as politics, economics, sports, entertainment,
+                        education, information and technology, features, lifestyle, and columns. Dhaka Post is owned by
+                        Bijoy Bangla Media Limited (BBML) and sister concern of the
+                        US Bangla Group of Companies.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
