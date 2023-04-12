@@ -149,7 +149,16 @@ button.bg-primary:hover {
     margin-right: 8px;
     object-fit: cover
 }
-
+.social-media-share-icon {
+    height: 40px;
+    width: 40px;
+    background: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: 12px;
+}
 .news-item-list h2 {
     font-size: 17px;
     line-height: 26px
