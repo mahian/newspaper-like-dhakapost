@@ -1,11 +1,12 @@
 :root {
-    --brand-color: #d71e1f;
+    --brand-color: #124B65;
+    --regular-font-size: 19px;
 }
 
 *,
 body {
     outline: 0 !important;
-    font-family: SolaimanLipi;
+    font-family: sans-serif;
 }
 
 a {
@@ -16,6 +17,14 @@ a {
 
 a:hover {
     color: #6d6d6d;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(185, 185, 185);
 }
 
 p,
@@ -47,21 +56,45 @@ button:focus {
 
 a.bg-primary:hover,
 button.bg-primary:hover {
-    background: #053348 !important
+    background: var(--brand-color) !important;
+    opacity: 0.8;
 }
 
 .bg-primary .category-header {
-    border-color: var(--brand-color)
+    border-color: var(--brand-color);
+}
+.navbar {
+    background: var(--brand-color) !important;
+    padding-top: 0;
+    height: 2.8rem;
+    padding-bottom: 0;
 }
 
 .navbar-nav .nav-item {
     margin: 0 8px
 }
-
-
+.navbar-nav>.nav-item:not(:last-child) {
+    border-bottom: 2px solid transparent;
+}
+.navbar-nav>.nav-item:not(:last-child):hover {
+    background: #ffffff34;
+    border-bottom: 2px solid white;
+}
 .navbar-brand img {
     width: 300px;
     height: auto
+}
+
+a.nav-link {
+    color: white;
+}
+a.nav-link:hover{
+    color: white;
+}
+
+.button-bars {
+    display: inline-block;
+    float: left;
 }
 
 .dropdown-menu a {
@@ -70,9 +103,14 @@ button.bg-primary:hover {
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
-    top: 46px;
+    top: 41px;
+    left: 0;
 }
-
+.navbar-toggler {
+    border: none;
+    background: 0 0 !important;
+    outline: none;
+}
 
 .navbar-nav li:hover .dropdown-menu {
     display: block
@@ -85,10 +123,6 @@ button.bg-primary:hover {
 .button-bars {
     display: inline-block;
     float: left
-}
-
-.fa-search {
-    color: black
 }
 
 .navbar-toggler {
@@ -106,6 +140,7 @@ button.bg-primary:hover {
 .navbar-toggler .icon-bar+.icon-bar {
     margin-top: 4px
 }
+
 
 .search-wrapper {
     transition: all .5s ease-in-out;
@@ -152,15 +187,19 @@ button.bg-primary:hover {
 .social-media-share-icon {
     height: 40px;
     width: 40px;
-    background: #e1e1e1;
+    background: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 7px;
     margin-right: 12px;
+    cursor: pointer;
+}
+.social-media-share-icon:hover {
+    background: #dfdfdf;
 }
 .news-item-list h2 {
-    font-size: 17px;
+    font-size: var(--regular-font-size);
     line-height: 26px
 }
 
@@ -259,7 +298,7 @@ button.bg-primary:hover {
 .special__item h2 {
     padding: 5px;
     position: absolute;
-    font-size: var(--font-size-list-item);
+    font-size: 17px;
     color: #fff;
     line-height: 26px;
     bottom: 0;
@@ -404,7 +443,7 @@ button.bg-primary:hover {
 .grid-fourth-item h2 {
     padding: 30px 10px 10px;
     line-height: 28px;
-    font-size: var(--font-size-list-item-first);
+    font-size: var(--regular-font-size);
     position: absolute;
     color: #fff;
     bottom: 0;
@@ -457,7 +496,7 @@ button.bg-primary:hover {
 .grid-third-item h2 {
     padding: 5px;
     line-height: 25px;
-    font-size: var(--font-size-list-item)
+    font-size: var(--regular-font-size)
 }
 
 .grid-third-item__1 {
@@ -545,7 +584,7 @@ button.bg-primary:hover {
 }
 
 .grid-entertainment-item h2 {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     line-height: 26px
 }
 
@@ -565,7 +604,7 @@ button.bg-primary:hover {
 }
 
 .alk-list .news-alk-image h2 {
-    font-size: var(--font-size-list-item-first);
+    font-size: var(--regular-font-size);
     line-height: 27px;
     padding-top: .5rem
 }
@@ -638,7 +677,7 @@ figcaption {
 }
 
 .ocs.card .card-title {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     padding: 0;
     margin: 0;
     line-height: 27px
@@ -674,7 +713,7 @@ figcaption {
 .blk-list .news-item-regular h2,
 .ctl-items .news-item-regular h2,
 .alk-list .news-item-regular h2.title {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     line-height: 25px
 }
 
@@ -706,7 +745,7 @@ figcaption {
 }
 
 .opinion-article-title {
-    font-size: var(--font-size-list-item)
+    font-size: var(--regular-font-size)
 }
 
 .opinion-article-content {
@@ -748,7 +787,7 @@ figcaption {
 }
 
 .ni-title {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     color: #fff;
     margin: 0 8px;
     line-height: 26px
@@ -799,7 +838,7 @@ figcaption {
 }
 
 .news-blk-txt h2 {
-    font-size: var(--font-size-list-item)
+    font-size: var(--regular-font-size)
 }
 
 .custom-follow {
@@ -1051,7 +1090,9 @@ figcaption {
 .nav-tabs .nav-link.active {
     border: none;
     border-radius: 0;
+    background-color: var(--brand-color);
     border-bottom: 2px solid var(--brand-color);
+    color: white;
 }
 
 .nav-tabs a.nav-link {
@@ -1091,7 +1132,7 @@ figcaption {
 }
 
 .news-item-lite {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     line-height: 26px
 }
 
@@ -1110,7 +1151,7 @@ figcaption {
 
 .news-item-box h2,
 .photo-item-box h2 {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     line-height: 26px;
     padding: 5px 0
 }
@@ -1141,7 +1182,7 @@ figcaption {
 }
 
 .menu-right li {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     padding: 0 12px
 }
 
@@ -1166,7 +1207,7 @@ figcaption {
 }
 
 .video-item h2 {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     line-height: 26px
 }
 
@@ -1192,7 +1233,7 @@ figcaption {
 }
 
 .type-sect-three-left .box-news .news-item-box h2 {
-    font-size: var(--font-size-list-item-first);
+    font-size: var(--regular-font-size);
     line-height: 27px !important
 }
 
@@ -1316,7 +1357,7 @@ figure img {
 }
 
 .news-details {
-    font-size: 19px;
+    font-size: var(--regular-font-size);
     padding: 10px 0;
     line-height: 30px
 }
@@ -1351,7 +1392,7 @@ figure img {
 
 .news-details .post-highlighter li::before {
     content: "\f061";
-    font-size: 19px;
+    font-size: var(--regular-font-size);
     font-family: FontAwesome;
     left: 24px;
     position: absolute
@@ -1503,7 +1544,7 @@ table {
 }
 
 .photo-item-regular h2.title {
-    font-size: var(--font-size-list-item);
+    font-size: var(--regular-font-size);
     line-height: 25px
 }
 
@@ -1528,11 +1569,11 @@ table {
 }
 
 .image-item p {
-    font-size: var(--font-size-list-item)
+    font-size: var(--regular-font-size)
 }
 
 .photo-description p {
-    font-size: var(--font-size-list-item)
+    font-size: var(--regular-font-size)
 }
 
 .video-box .pvc-item i {
@@ -1649,7 +1690,7 @@ table {
     color: #fff;
     padding: 8px;
     line-height: 28px;
-    font-size: var(--font-size-list-item)
+    font-size: var(--regular-font-size)
 }
 
 .story-page-indicator {
@@ -1739,6 +1780,14 @@ table {
 
 .alk-list .news-item-alk:first-child .video-icon {
     font-size: 50px
+}
+
+.subcategories a {
+    font-size: 17px;
+    margin-top: 8px;
+    background: #eee;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 @media print {
@@ -2249,7 +2298,7 @@ table {
 
     .mobile-menu.navbar-nav .nav-item a {
         color: var(--brand-text-color);
-        font-size: var(--font-size-list-item);
+        font-size: var(--regular-font-size);
         border-bottom: 1px solid #eee;
         padding: 1rem 0
     }

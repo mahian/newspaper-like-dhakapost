@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newspaper website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- top navbar -->
+    <div class="container d-none d-lg-flex py-3 navbar-root">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <p class="d-flex align-items-center">
+                <span class="d-flex align-items-center me-3">
+                    <svg class="me-2" fill="black" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24"
+                        width="18">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                        </path>
+                    </svg><span>ঢাকা</span>
+                </span>
+                <span class="d-flex align-items-center">
+                    <svg class="me-2" fill="black" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 24 24"
+                        width="18">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z">
+                        </path>
+                    </svg><span> বুধবার, ০৫ এপ্রিল ২০২৩</span>
+                </span>
+            </p>
+            <a class="brand-logo-top" title="News Website" href="/">
+                <img style="max-width: 300px;" src="/assets/images/dhaka-post-logo.png" alt="News Website">
+            </a>
+            <div class="d-flex gap-2 align-items-center social-media-icons">
+                <a href="https://www.facebook.com/DPostOnline/" aria-label="Facebook" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon facebook"><i class="fa-brands fa-facebook"></i></i></div>
+                </a>
+                <a href="https://www.youtube.com/c/DhakaPostOfficial" aria-label="Youtube" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon youtube"><i class="fa-brands fa-youtube"></i></div>
+                </a>
+                <a href="https://twitter.com/dpostonline" aria-label="Twitter" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon twitter"><i class="fa-brands fa-twitter"></i></div>
+                </a>
+                <a href="https://www.instagram.com/dpostonline" aria-label="Instagram" target="_blank" class="pl-2"
+                    rel="nofollow noopener">
+                    <div class="social-icon instagram"><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/company/dpostonline/" aria-label="Linkedin" target="_blank"
+                    class="pl-2" rel="nofollow noopener">
+                    <div class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- second navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm navigator-extra"
+        style="z-index: 2147483!important; background-color: var(--brand-color);">
+        <div class="container">
+            <button class="navbar-toggler collapsed m-margin-reducer-left-14" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav-1" aria-controls="main-nav-1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="navbar-brand align-items-center d-flex d-lg-none me-0">
+                <a title="News Website" href="/">
+                    <img src="/assets/images/dhaka-post-logo.png" alt="News Website" width="1345" height="192">
+                </a>
+            </div>
+            <button type="button" class="btn btn-link d-flex d-lg-none" data-target="slide-down-m" aria-label="Search"
+                style="margin-right: -14px;">
+                <i class="fa fa-search" style="font-size: 20px;"></i></button>
+            <div class="navbar-collapse collapse" id="main-nav-1">
+                <div style="width: 99%">
+                    <ul class="navbar-nav m-auto d-lg-flex d-menu-items justify-content-center">
+                        <li class="nav-item">
+                            <a title="" href="" class="nav-link">প্রচ্ছদ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="-news" class="nav-link">সর্বশেষ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="" class="nav-link">জাতীয়</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="" class="nav-link">রাজনীতি</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="" class="nav-link">অর্থনীতি</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-toggle"
+                            style="display: flex; color: #FFF; align-items: center;">
+                            <a title="" href="" class="nav-link">সারাদেশ</a>
+                            <div class="dropdown-menu single-dropdown s-dr-menu m-0" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="-map" style="padding: 5px 0;">জেলার
+                                    খবর</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="" class="nav-link">আন্তর্জাতিক</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="" class="nav-link">খেলা</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="" href="" class="nav-link">বিনোদন</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a title="" href="" class="nav-link">স্বাস্থ্য</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-toggle"
+                            style="display: flex; color: #FFF; align-items: center;">
+                            <a title="" href="#" class="nav-link">ফিচার</a>
+                            <div class="dropdown-menu single-dropdown s-dr-menu m-0" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="" style="padding: 5px 0;">লাইফস্টাইল</a>
+                                <a class="dropdown-item" href="" style="padding: 5px 0;">তথ্যপ্রযুক্তি</a>
+                                <a class="dropdown-item" href="" style="padding: 5px 0;">ট্যুরিজম</a>
+                                <a class="dropdown-item" href="" style="padding: 5px 0;">পড়াশোনা</a>
+                            </div>
+                        </li>
+                        <li class="nav-item hidden-item-lowerend">
+                            <a title="" href="" class="nav-link">শিক্ষা</a>
+                        </li>
+                        <li class="nav-item hidden-item-lowerend">
+                            <a title="" href="-career" class="nav-link">জবস</a>
+                        </li>
+                        <li class="nav-item position-static d-flex">
+                            <a class="navbar-toggler collapsed nav-link d-flex align-items-center text-white"
+                                aria-expanded="false" type="button" data-toggle="collapse" data-target="#nav-items-2">
+                                <div class="button-bars me-2">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                                <span class="button-label">অন্যান্য</span>
+                            </a>
+                            <div class="dropdown-menu w-100 top-auto shadow border-0 rounded-0 nav-collapse collapse m-0"
+                                id="nav-items-2">
+                                <div class="container">
+                                    <div class="row w-100 menu-items-others">
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">স্বাস্থ্য</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">শিক্ষা</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">জবস</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">প্রবাস</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">মতামত</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">ধর্ম</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">ছোটদের পোস্ট</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">ক্যাম্পাস</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">আইন-আদালত</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">পডকাস্ট</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">কৃষি ও প্রকৃতি</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">এভিয়েশন</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">এক্সক্লুসিভ</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">গণমাধ্যম</a>
+                                        </div>
+                                        <div class="col-sm-2 py-3">
+                                            <a class="" href="">কনভার্টার</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item position-static d-flex">
+                            <button type="button" class="btn btn-link text-white" data-target="slide-down"
+                                aria-label="Search"><i class="fa fa-search"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex d-lg-none"
+                    style="position: fixed; padding: 1rem; background: #f5f5f5; width: 100%; color: #FFF; justify-content:space-between">
+                    <button class="navbar-toggler m-margin-reducer-left-14 text-white" type="button"
+                        data-toggle="collapse" data-target="#main-nav-1" aria-controls="main-nav-1" aria-expanded="true"
+                        aria-label="Toggle navigation" style=" ">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                        <span class="sr-only">DP</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <form class="search-wrapper needs-validation" style="display: none;" data-target="slide-content" action=""
+            method="get">
+            <div class="container m-pl-0 m-pr-0">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" autocomplete="off" placeholder="অনুসন্ধান করুন"
+                            required="">
+                        <div class="input-group-append search-action">
+                            <button type="submit" class="btn btn-dark"><i style="color: white !important;"
+                                    class="fa fa-search"></i></button>
+                            <button type="button" class="btn btn-light m-margin-reducer-right-14"
+                                data-target="slide-up">
+                                <i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </nav>
+
+    <!-- main container -->
+    <main role="main">
+        <div class="py-3 category">
+            <div class="container">
+                <div class="category-container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-8 mb-2">
+                            <section class="section-bb">
+                                <div class="cat-header py-2">
+                                    <h1><a href="/politics">রাজনীতি</a></h1>
+                                </div>
+                                <div class="subcategories d-flex align-items-center">
+                                    <a href="" class="cat-item rounded py-1 px-2">আওয়ামী লীগ</a>
+                                    <a href="" class="cat-item rounded py-1 px-2">বি এন পি</a>
+                                    <a href="" class="cat-item rounded py-1 px-2">জাতিয় পার্টি</a>
+                                </div>
+                            </section>
+                            <div class="cat-lead-container border-bottom my-2">
+                                <div class="row">
+                                    <div class="col-lg-8 top-left-section lead-top">
+                                        <div class="lead-news">
+                                            <a href="/politics/186539"
+                                                class="news-item news-item-lead border-0">
+                                                <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/go-20230412215530.jpg?width=640&amp;height=360"
+                                                    alt="ইফতারের দাওয়াত নিয়ে আ.লীগ অফিসে গণঅধিকার পরিষদ" width="640"
+                                                    height="335" class="lazyload img-loader">
+                                                <h2 class="title liveTitle" style="margin: 10px 0">
+                                                    ইফতারের দাওয়াত নিয়ে আ.লীগ অফিসে গণঅধিকার পরিষদ
+                                                </h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 cat-two-items">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-12 box-news">
+                                                <a href="/politics/186530"
+                                                    class="news-item news-item-box m-py-2 border-bottom">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/jafrullah-202304121231111-20230412211112.jpg?width=330&amp;height=186"
+                                                        alt="জাফরুল্লাহর শেষ বিদায়ে বিএনপির ‘ইতস্তত রোদন’!" width="330"
+                                                        height="175" class="lazyload img-loader">
+                                                    <h2 class="title">
+                                                        জাফরুল্লাহর শেষ বিদায়ে বিএনপির ‘ইতস্তত রোদন’!
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-12 box-news pt-2">
+                                                <a href="/politics/186519"
+                                                    class="news-item news-item-box m-py-2">
+                                                    <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/untitled-1-20230412200054.jpg?width=330&amp;height=186"
+                                                        alt="পাঁচ সিটিতে নৌকা প্রত্যাশী  ৪১ জন" width="330" height="175"
+                                                        class="lazyload img-loader">
+                                                    <h2 class="title">
+                                                        পাঁচ সিটিতে নৌকা প্রত্যাশী ৪১ জন
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row more-contents">
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 box-news">
+                                    <a href="details.html" class="news-item news-item-box m-py-2">
+                                        <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/fakhrul-20230412160324.jpg?width=330&amp;height=186"
+                                            alt="" width="330"
+                                            height="175" class="lazyload img-loader">
+                                        <h2 class="title">
+                                            আইএমএফের শর্ত মানতে বিদ্যুৎ-সারের দাম বাড়াচ্ছে সরকার
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-100 text-center py-2">
+                                <button type="button" class="btn bg-primary px-4 load-more text-white">আরও দেখুন</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4">
+                            <div class="advertisement d-flex justify-content-center">
+                            </div>
+                            <div class="category-right-section-top">
+                                <div class="category-header d-flex justify-content-between align-items-center mt-2">
+                                    <div class="heading national-heading">
+                                        <p class="title">এই সপ্তাহের পাঠকপ্রিয়</p>
+                                    </div>
+                                </div>
+                                <div class="blk-list scaled">
+                                    <a href="details.html"
+                                        class="news-item news-item-regular py-2">
+                                        <div class="image-container">
+                                            <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/1236-20230406193941.jpg?width=160&amp;height=90"
+                                                width="130" height="90" alt=""
+                                                class="lazyload img-loader">
+                                        </div>
+                                        <h2 class="title">ফেঁসে যাচ্ছে রাজধানীর নামিদামি ৭ স্কুল</h2>
+                                    </a>
+                                    <a href="details.html"
+                                        class="news-item news-item-regular py-2">
+                                        <div class="image-container">
+                                            <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/1236-20230406193941.jpg?width=160&amp;height=90"
+                                                width="130" height="90" alt=""
+                                                class="lazyload img-loader">
+                                        </div>
+                                        <h2 class="title">ফেঁসে যাচ্ছে রাজধানীর নামিদামি ৭ স্কুল</h2>
+                                    </a>
+                                    <a href="details.html"
+                                        class="news-item news-item-regular py-2">
+                                        <div class="image-container">
+                                            <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/1236-20230406193941.jpg?width=160&amp;height=90"
+                                                width="130" height="90" alt=""
+                                                class="lazyload img-loader">
+                                        </div>
+                                        <h2 class="title">ফেঁসে যাচ্ছে রাজধানীর নামিদামি ৭ স্কুল</h2>
+                                    </a>
+                                    <a href="details.html"
+                                        class="news-item news-item-regular py-2">
+                                        <div class="image-container">
+                                            <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/1236-20230406193941.jpg?width=160&amp;height=90"
+                                                width="130" height="90" alt=""
+                                                class="lazyload img-loader">
+                                        </div>
+                                        <h2 class="title">ফেঁসে যাচ্ছে রাজধানীর নামিদামি ৭ স্কুল</h2>
+                                    </a>
+                                    <a href="details.html"
+                                        class="news-item news-item-regular py-2">
+                                        <div class="image-container">
+                                            <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/1236-20230406193941.jpg?width=160&amp;height=90"
+                                                width="130" height="90" alt=""
+                                                class="lazyload img-loader">
+                                        </div>
+                                        <h2 class="title">ফেঁসে যাচ্ছে রাজধানীর নামিদামি ৭ স্কুল</h2>
+                                    </a>
+                                    <a href="details.html"
+                                        class="news-item news-item-regular py-2">
+                                        <div class="image-container">
+                                            <img src="https://assets.dhakapost.com/media/imgAll/BG/2023April/1236-20230406193941.jpg?width=160&amp;height=90"
+                                                width="130" height="90" alt=""
+                                                class="lazyload img-loader">
+                                        </div>
+                                        <h2 class="title">ফেঁসে যাচ্ছে রাজধানীর নামিদামি ৭ স্কুল</h2>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer data-nosnippet="" class="d-print-none pb-3" style="background: black;">
+        <div class="container">
+            
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
