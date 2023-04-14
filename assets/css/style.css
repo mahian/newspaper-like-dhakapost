@@ -63,6 +63,7 @@ button.bg-primary:hover {
 .bg-primary .category-header {
     border-color: var(--brand-color);
 }
+
 .navbar {
     background: var(--brand-color) !important;
     padding-top: 0;
@@ -73,13 +74,16 @@ button.bg-primary:hover {
 .navbar-nav .nav-item {
     margin: 0 8px
 }
+
 .navbar-nav>.nav-item:not(:last-child) {
     border-bottom: 2px solid transparent;
 }
+
 .navbar-nav>.nav-item:not(:last-child):hover {
     background: #ffffff34;
     border-bottom: 2px solid white;
 }
+
 .navbar-brand img {
     width: 300px;
     height: auto
@@ -88,7 +92,8 @@ button.bg-primary:hover {
 a.nav-link {
     color: white;
 }
-a.nav-link:hover{
+
+a.nav-link:hover {
     color: white;
 }
 
@@ -106,6 +111,7 @@ a.nav-link:hover{
     top: 41px;
     left: 0;
 }
+
 .navbar-toggler {
     border: none;
     background: 0 0 !important;
@@ -151,6 +157,22 @@ a.nav-link:hover{
     height: 60.8px !important
 }
 
+.bell-icon {
+    background: var(--brand-color);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
 .news-item-lead {
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 12px;
@@ -184,6 +206,7 @@ a.nav-link:hover{
     margin-right: 8px;
     object-fit: cover
 }
+
 .social-media-share-icon {
     height: 40px;
     width: 40px;
@@ -195,9 +218,11 @@ a.nav-link:hover{
     margin-right: 12px;
     cursor: pointer;
 }
+
 .social-media-share-icon:hover {
     background: #dfdfdf;
 }
+
 .news-item-list h2 {
     font-size: var(--regular-font-size);
     line-height: 26px
@@ -1408,17 +1433,6 @@ table {
     border-collapse: collapse
 }
 
-.sports-section-contents .news-item img {
-    width: 110px;
-    height: 90px;
-    object-fit: cover;
-    margin-right: 8px
-}
-
-.sports-section-contents .grid-fourth {
-    grid-template-rows: repeat(6, 3.44vw)
-}
-
 .details-right-section-top a.news-item-list,
 .details-right-section-bottom a.news-item-list {}
 
@@ -2276,18 +2290,24 @@ table {
     .navbar-collapse {
         position: fixed;
         top: 0;
-        bottom: 0;
         left: 0;
         width: 100%;
         overflow-y: auto;
-        background: #fff;
+        background: white;
         visibility: hidden;
-        transition: none !important
     }
 
     .navbar-collapse.show {
         visibility: visible;
-        z-index: 100
+        z-index: 100;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
     }
 
     .navbar-collapse.collapsing {
@@ -2718,7 +2738,7 @@ table {
     }
 
     .grid-fourth {
-        grid-template-rows: repeat(6, 6.2vw)
+        grid-template-rows: repeat(6, 10.2vw)
     }
 
     .video-home-title {
